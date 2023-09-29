@@ -37,7 +37,7 @@ function isDestroyed(health) {
 
 function reloadShip() {
     // reduce ship health by 1 and increase ammo by 3
-    shipHealth -= 1;
+    shipHealth -=1; //shipHealth--; can also be used
     shipAmmo += 3;
 
 }
