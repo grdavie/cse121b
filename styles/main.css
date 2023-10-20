@@ -226,18 +226,93 @@ footer {
     background-color: rgb(250, 225, 250, .5);
 }
 
+#filters {
+    margin-top: 25px;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+   
+}
+
+#genre, #type, #status {
+    appearance: none;
+    padding: 5px;
+    background-color: #eeeeee;
+    color: #444;
+    font-weight: 700;
+    height: 35px;
+    width: 250px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    text-align: center;
+    margin: 0 2%;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#genre {
+    background-color: rgb(152, 210, 180);
+    margin-left: 20%;
+}
+
+#type {
+    background-color: #b7f1ff;
+}
+
+#status {
+    background-color: #f5ecb7;
+    margin-right: 20%;
+}
+
+#genre:hover{
+    background-color: #d8f9f1;
+}
+
+#type:hover{
+    background-color: #def2f7;
+}
+
+#status:hover{
+    background-color: #f9f7ec;
+}
+
+#anime .generate {
+    background-color: rgb(15, 2, 98);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: 1px solid rgba(0, 0, 0, .2);
+    height: 50px;
+    width: 300px;
+    margin: 2% auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#anime .generate:hover {
+    background-color: rgb(64, 87, 139);
+  }
+
+#anime {
+
+    text-align: center;
+}
+
 #sortBy {
     appearance: none;
     display: flex;
     padding: .5rem;
-    background-color: #eee;
+    background-color: #eeeeee;
     color: #444;
     font-weight: 700;
     margin: 1rem auto;
-    width: 200px;
+    height: 50px;
+    width: 250px;
     border: 1px solid rgba(0, 0, 0, .2);
     text-align: center;
 }
+
+
 
 #sortBy option:disabled {
     font-style: italic;
@@ -245,6 +320,9 @@ footer {
     background-color: #111;
     color: #eee;
 }
+
+
+
 
 #temples {
     display: grid;
