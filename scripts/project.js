@@ -43,7 +43,7 @@ const displayAnime = (animeResult) => {
 //fetch anime list
 
 const getAnimeList = async () => {
-    const response = await fetch("https://run.mocky.io/v3/6cfd6b8a-64f7-4766-8505-8734a7bf15d2");
+    const response = await fetch("https://grdavie.github.io/cse121b/json/animelist.json");
 
     if (response.ok) {
         animeList = await response.json();
@@ -76,7 +76,7 @@ const sortBy = function(animeList) {
 }
 
 // Fetching anime details from MAL endpoint
-const apiEndpoint = "https://api.myanimelist.net/v2/anime";
+const apiEndpoint = "https://api.myanimelist.net/v2/anime/";
 const clientID = "e7e04fc84a4d833963b51c190f76d3ed";
 
 //Async function to fetch and store anime details for each anime ID in the animeID array
@@ -84,7 +84,7 @@ const clientID = "e7e04fc84a4d833963b51c190f76d3ed";
 const getAnimeDetails = async () => {
     for (const id of animeID) {
         try {
-            const response = await fetch(`${apiEndpoint}${id}?fields=id,title,main_picture,alternative_titles,synopsis`, {
+            const response = await fetch(`${apiEndpoint}${id}`, {
                 headers: {
                     'X-MAL-CLIENT-ID': clientID,
                 },
