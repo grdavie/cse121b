@@ -85,6 +85,7 @@ const getAnimeDetails = async () => {
     for (const id of animeID) {
         try {
             const response = await fetch(`${apiEndpoint}${id}`, {
+                mode: 'no-cors',
                 headers: {
                     'X-MAL-CLIENT-ID': clientID,
                 },
