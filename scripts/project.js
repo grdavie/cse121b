@@ -55,12 +55,20 @@ const displayAnime = (animeResult) => {
 //fetch anime list - couldn't get authorisation from MAL so created my own json file and hosted it in my repository
 
 const getAnimeList = async () => {
-    const response = await fetch("https://grdavie.github.io/cse121b/json/animelist.json");
+    try {
+        const response = await fetch("https://grdavie.github.io/cse121b/json/animelist.json");
 
-    if (response.ok) {
-        animeList = await response.json();
+        if (response.ok) {
+            animeList = await response.json();
+        } else {
+            console.error(`Failed to fetch anime list: Status ${response.status} - ${response.statusText}`);
+        }
+    } catch (error) {
+        console.error(`An error occurred while fetching the anime list: ${error.message}`);
     }
-}
+};
+
+
 
 
 //reset function 
