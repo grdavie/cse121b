@@ -50,7 +50,7 @@ const displayAnime = (animeResult) => {
         animeElement.appendChild(articleElement);
 
     })
-}
+};
 
 //fetch anime list - couldn't get authorisation from MAL so created my own json file and hosted it in my repository
 
@@ -109,7 +109,7 @@ const generateButton = function () {
     generateList();
 
     displayAnime(recommendationList);
-}
+};
 
 //run the functions
 
