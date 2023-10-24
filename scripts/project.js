@@ -20,7 +20,7 @@ const displayAnime = (animeResult) => {
         h3Element.textContent = anime.anime_title;
 
 
-        //display alternative title (english name) if it's not the same as the anime title
+        //display alternative title (english name) if it's not the same as the anime title and is not an empty string
         const h4Element = document.createElement("h4");
         if(anime.anime_title !== anime.anime_title_eng && anime.anime_title_eng !== "") {
             h4Element.textContent = `English/Alternative Title: ${anime.anime_title_eng}`;
