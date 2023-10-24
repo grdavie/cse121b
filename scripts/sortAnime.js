@@ -7,7 +7,7 @@ const sortByPopularity = function(filteredAnime) {
             return a["anime_popularity"] - b["anime_popularity"];
         });    
     } else {
-        return filteredAnime;
+        return filteredAnime; //do nothy if the list is empty
     }    
     
 };
