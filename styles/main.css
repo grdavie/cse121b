@@ -302,17 +302,14 @@ footer {
     appearance: none;
     display: flex;
     padding: .5rem;
-    background-color: #eeeeee;
+    background-color: #eee;
     color: #444;
     font-weight: 700;
     margin: 1rem auto;
-    height: 50px;
-    width: 250px;
+    width: 200px;
     border: 1px solid rgba(0, 0, 0, .2);
     text-align: center;
 }
-
-
 
 #sortBy option:disabled {
     font-style: italic;
@@ -321,10 +318,7 @@ footer {
     color: #eee;
 }
 
-
-
-
-#temples, #recommendations {
+#temples {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: .5rem;
@@ -332,7 +326,7 @@ footer {
     margin-bottom: 3rem;
 }
 
-#temples, #recommendations article {
+#temples article {
     height: 250px;
     margin: .5rem;
     border: 1px solid rgba(0, 0, 0, .1);
@@ -344,28 +338,65 @@ footer {
     justify-content: center;
 }
 
-#temples, #recommendations h4 {
+#temples h4 {
     color: navy;
     font-size: smaller;
 }
 
-#recommendations h3 {
-    color: navy;
-    font-size: small;
-}
 
-
-
-#temples, #recommendations img {
+#temples img {
     width: 250px;
     height: auto;
     box-shadow: 0 0 30px #777;
     margin: .5rem;
 }
 
+#recommendations article {
+    height: 600px;
+    margin: .5rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#recommendations h4 {
+    color: navy;
+    font-size: smaller;
+}
+
+#recommendations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: .5rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#recommendations h3 {
+    color: navy;
+    font-size: 1.5rem;
+}
+
+
+#recommendations img {
+    width: 250px;
+    height: auto;
+    box-shadow: 0 0 30px #777;
+    margin: 1.2rem;
+}
+
+#recommendations img:hover {
+    opacity: 0.7;
+}
+
 #recommendations p {
     color: navy;
-    font-size: x-small;
+    font-size: .8rem;
 }
 
 /* Media Queries */
